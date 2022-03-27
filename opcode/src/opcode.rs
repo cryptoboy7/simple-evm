@@ -12,7 +12,6 @@ impl OpCode {
             0x60 => Ok(OpCode::PUSH),
             0x01 => Ok(OpCode::ADD),
             _ => Err(Error::InvalidOpCode(opcode)),
-            
         }
     }
 }
